@@ -134,7 +134,6 @@ namespace dotMorten.Xamarin.Forms.Platform.Android
                 suppressTextChangedEvent = false;
                 TextChanged?.Invoke(this, new AutoSuggestBoxTextChangedEventArgs(AutoSuggestionBoxTextChangeReason.SuggestionChosen));
             }
-
             base.SetSelection(base.Text.Length);
             SuggestionChosen?.Invoke(this, new AutoSuggestBoxSuggestionChosenEventArgs(obj));
             QuerySubmitted?.Invoke(this, new AutoSuggestBoxQuerySubmittedEventArgs(Text, obj));
